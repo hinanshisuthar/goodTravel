@@ -1,4 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+
 .App {
-  font-family: sans-serif;
+  font-family: "Oxygen", sans-serif;
   text-align: center;
+  margin: auto;
+}
+
+html {
+  background-image: url(travel.jpg);
+  background-position-x: 380px;
+}
+
+.gap {
+  height: 80px;
+}
+
+.subHeading {
+  font-size: 1.2rem;
+}
+
+.button {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.6rem;
+  font-size: 1rem;
+  border: 1.2px solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #f3f4f6;
+  color: #0c4a6e;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.hr {
+  width: 35%;
+  margin-top: 20px;
+}
+
+.unorderedList {
+  list-style: none;
+  text-align: left;
+  margin-left: 485px;
+
+  /* border: 1px solid black; */
+}
+
+.listName {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  width: 35%;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
