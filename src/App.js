@@ -86,14 +86,12 @@ export default function App() {
           {travel[selectedContinent].map((place) => (
             <li className="listName">
               <div className="movie-name" style={{ color: "#0c4a6e" }}>
-                {" "}
-                {place.name}{" "}
+                {place.name}
               </div>
               <div className="movie-rating" style={{ fontWeight: "bold" }}>
-                {" "}
-                {place.description}{" "}
+                {place.description}
               </div>
-              <div className="movie-rating"> {place.rating} </div>s
+              <div className="movie-rating"> {place.rating} </div>
             </li>
           ))}
         </ul>
