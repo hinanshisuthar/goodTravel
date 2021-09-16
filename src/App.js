@@ -3,24 +3,57 @@ import "./styles.css";
 
 const travel = {
   Europe: [
-    { name: "Paris", rating: "5/5" },
-    { name: "Finland", rating: "4.5/5" },
-    { name: "Copenhagen", rating: "4/5" }
+    { name: "Paris", description: "the city of love", rating: "5/5" },
+    { name: "Finland", description: "the finest land", rating: "4.5/5" },
+    { name: "Copenhagen", description: "the colorful cuty", rating: "4/5" }
   ],
   NorthAmerica: [
-    { name: "Alaska", rating: "5/5" },
-    { name: "California", rating: "4.5/5" },
-    { name: "Northern Lights", rating: "5/5" }
+    { name: "Alaska", description: "enjoy the chills", rating: "5/5" },
+    {
+      name: "California",
+      description: "ahh! golden state warriors land",
+      rating: "4.5/5"
+    },
+    {
+      name: "Northern Lights",
+      description: "you'll fall in love with the lights",
+      rating: "5/5"
+    }
   ],
   Asia: [
-    { name: "Conrad Manila", rating: "5/5" },
-    { name: "Maldives", rating: "4/5" },
-    { name: "East India", rating: "5/5" }
+    {
+      name: "Conrad Manila",
+      description: "just wow!",
+      rating: "5/5"
+    },
+    {
+      name: "Maldives",
+      description: "omg! the beaches blue",
+      rating: "4/5"
+    },
+    {
+      name: "East India",
+      description:
+        "do you even love to travel if you dont have this on your bucker list?",
+      rating: "5/5"
+    }
   ],
   Africa: [
-    { name: "Zanzibar", rating: "5/5" },
-    { name: "Seychelles", rating: "5/5" },
-    { name: "Chefchaouen", rating: "4.5/5" }
+    {
+      name: "Zanzibar",
+      description: "just go now and visit this damn place!",
+      rating: "5/5"
+    },
+    {
+      name: "Seychelles",
+      description: "the chills in seychelles",
+      rating: "5/5"
+    },
+    {
+      name: "Chefchaouen",
+      description: "the foooood over here!!",
+      rating: "4.5/5"
+    }
   ]
 };
 
@@ -52,8 +85,15 @@ export default function App() {
         <ul className="unorderedList">
           {travel[selectedContinent].map((place) => (
             <li className="listName">
-              <div className="movie-name"> {place.name} </div>
-              <div className="movie-rating"> {place.rating} </div>
+              <div className="movie-name" style={{ color: "#0c4a6e" }}>
+                {" "}
+                {place.name}{" "}
+              </div>
+              <div className="movie-rating" style={{ fontWeight: "bold" }}>
+                {" "}
+                {place.description}{" "}
+              </div>
+              <div className="movie-rating"> {place.rating} </div>s
             </li>
           ))}
         </ul>
